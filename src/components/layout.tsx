@@ -26,7 +26,6 @@ const Heading = styled.h1`
   color: rebeccapurple;
 `;
 
-
 interface LayoutProps {
   pageTitle: string;
   children: React.ReactNode;
@@ -51,6 +50,6 @@ const Layout: FC<LayoutProps> = ({ pageTitle, children }) => {
       </main>
     </Container>
   )
-}
+};
 
-export default Layout
+export default Layout;
