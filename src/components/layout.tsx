@@ -42,6 +42,9 @@ const Layout: FC<LayoutProps> = ({ pageTitle, children }) => {
           <li className="nav-link-item">
             <Link className="nav-link" to="/about">About</Link>
           </li>
+          <li className="nav-link-item">
+            <Link className="nav-link" to="/resume">Resume</Link>
+          </li>
         </NavLinks>
       </nav>
       <main>
