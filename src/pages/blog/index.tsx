@@ -1,8 +1,8 @@
 import React from 'react';
 import type { HeadFC, PageProps } from 'gatsby';
-import { graphql } from 'gatsby';
-import Layout from '../components/layout';
-import Seo from '../components/seo';
+import { Link, graphql } from 'gatsby';
+import Layout from '../../components/layout';
+import Seo from '../../components/seo';
 
 type DataProps = {
   allMdx: {
@@ -17,27 +17,30 @@ type DataProps = {
         frontmatter: {
           date: string;
           title: string;
+          slug: string;
         };
       }
     ]
   }
 }
 
-const Blog = ({ data: { allMdx } }: PageProps<DataProps>) => {
-  return (
-    <Layout pageTitle="My Blog Posts">
-      {
-        allMdx.nodes.map((node) => (
-          <article key={node.id}>
-            <h2>{node.frontmatter.title}</h2>
-            <p>Posted: {node.frontmatter.date}</p>
-            <p>{node.excerpt}</p>
-          </article>
-        ))
-      }
-    </Layout>
-  )
-};
+const Blog = ({ data: { allMdx } }: PageProps<DataProps>) => (
+  <Layout pageTitle="My Blog Posts">
+    {
+      allMdx.nodes.map(({ id, excerpt, frontmatter: { date, title, slug } }) => (
+        <article key={id}>
+          <h2>
+            <Link to={`/blog/${slug}`}>
+              {title}
+            </Link>
+          </h2>
+          <p>Posted: {date}</p>
+          <p>{excerpt}</p>
+        </article>
+      ))
+    }
+  </Layout>
+);
 
 export const query = graphql`
   query {
@@ -46,13 +49,14 @@ export const query = graphql`
         frontmatter {
           date(formatString: "MMMM D, YYYY")
           title
+          slug
         }
         id
         excerpt
       }
     }
   }
-`
+`;
 
 export const Head: HeadFC = () => <Seo title="My Blog Posts" />;
 
