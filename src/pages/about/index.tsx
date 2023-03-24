@@ -1,5 +1,4 @@
 import React, { FC } from 'react';
-import type { HeadFC } from 'gatsby';
 import Layout from '../../components/layout/Layout';
 import Seo from '../../components/seo/Seo';
 
@@ -11,6 +10,6 @@ const AboutPage: FC = () => {
   )
 };
 
-export const Head: HeadFC = () => <Seo title="About Me" />;
+export const Head = () => <Seo title="About Me" />;
 
 export default AboutPage;

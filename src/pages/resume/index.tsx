@@ -1,6 +1,6 @@
 import React, { FC } from 'react';
-import type { HeadFC } from 'gatsby';
 import Layout from '../../components/layout/Layout';
+import Seo from '../../components/seo/Seo';
 
 const ResumePage: FC = () => {
   return (
@@ -10,6 +10,6 @@ const ResumePage: FC = () => {
   )
 };
 
-export const Head: HeadFC = () => <title>Resume</title>;
+export const Head = () => <Seo title="My Resume" />;
 
 export default ResumePage;

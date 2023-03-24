@@ -15,7 +15,8 @@
     "clean": "gatsby clean",
     "typecheck": "tsc --noEmit",
     "test": "jest",
-    "test:watch": "npm test -- --watch"
+    "test:watch": "jest --watch",
+    "test:coverage": "jest --coverage --coverageThreshold='{\"global\":{\"statements\":\"100\",\"branches\":\"100\",\"functions\":\"100\",\"lines\":\"100\"}}'"
   },
   "dependencies": {
     "@mdx-js/react": "^2.3.0",

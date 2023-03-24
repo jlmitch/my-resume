@@ -1,5 +1,4 @@
 import React, { FC } from 'react';
-import { HeadFC } from 'gatsby';
 import { StaticImage } from 'gatsby-plugin-image';
 import Layout from '../components/layout/Layout';
 import Seo from '../components/seo/Seo';
@@ -13,6 +12,6 @@ const HomePage: FC = () => {
   )
 };
 
-export const Head: HeadFC = () => <Seo title="Home Page" />;
+export const Head = () => <Seo title="Home Page" />;
 
 export default HomePage;
