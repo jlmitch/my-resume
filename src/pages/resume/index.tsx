@@ -1,8 +1,8 @@
 import React, { FC } from 'react';
-import type { HeadFC, PageProps } from 'gatsby';
-import Layout from '../components/layout';
+import type { HeadFC } from 'gatsby';
+import Layout from '../../components/layout/Layout';
 
-const ResumePage: FC<PageProps> = () => {
+const ResumePage: FC = () => {
   return (
     <Layout pageTitle="Resume">
       <p>This will be my downloadable Resume</p>

@@ -1,8 +1,8 @@
 import React from 'react';
 import type { HeadFC, PageProps } from 'gatsby';
 import { graphql } from 'gatsby';
-import Layout from '../../components/layout';
-import Seo from '../../components/seo';
+import Layout from '../../components/layout/Layout';
+import Seo from '../../components/seo/Seo';
 
 type DataProps = {
   mdx: {

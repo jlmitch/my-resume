@@ -1,5 +1,5 @@
 import React, { FC } from 'react';
-import { useSiteMetadata } from '../hooks/useSiteMetadata';
+import { useSiteMetadata } from '../../hooks/siteMetadata/useSiteMetadata';
 
 interface SeoProps {
   title: string;

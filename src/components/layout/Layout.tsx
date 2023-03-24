@@ -1,6 +1,7 @@
 import React, { FC } from 'react';
-import { Link, useStaticQuery, graphql } from 'gatsby';
+import { Link } from 'gatsby';
 import styled from 'styled-components';
+import { useSiteMetadata } from '../../hooks/siteMetadata/useSiteMetadata';
 
 const Container =  styled.div`
   margin: auto;
@@ -39,37 +40,35 @@ interface LayoutProps {
 };
 
 const Layout: FC<LayoutProps> = ({ pageTitle, children }) => {
-  const data = useStaticQuery(graphql`
-    query {
-      site {
-        siteMetadata {
-          title
-        }
-      }
-    }
-  `);
+  const { siteTitle } = useSiteMetadata();
 
   return (
     <Container>
-      <Header>{data.site.siteMetadata.title}</Header>
+      <Header>{siteTitle}</Header>
+
       <nav>
         <NavLinks>
           <li className="nav-link-item">
             <Link className="nav-link" to="/">Home</Link>
           </li>
+
           <li className="nav-link-item">
             <Link className="nav-link" to="/about">About</Link>
           </li>
+
           <li className="nav-link-item">
             <Link className="nav-link" to="/resume">Resume</Link>
           </li>
+
           <li className="nav-link-item">
             <Link className="nav-link" to="/blog">Blog</Link>
           </li>
         </NavLinks>
       </nav>
+
       <main>
         <Heading>{pageTitle}</Heading>
+        
         {children}
       </main>
     </Container>
