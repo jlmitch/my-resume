@@ -22,6 +22,7 @@ describe('Home Page', () => {
     render(<IndexPage />);
 
     expect(screen.getByText('I\'m making this by following the Gatsby Tutorial.')).toBeInTheDocument();
+    expect(screen.getByAltText('Me on my boat')).toBeInTheDocument();
   });
 
   test('should display Head content', () => {
