@@ -57,11 +57,7 @@ const Header = () => (
     </div>
 
     <div className="contact-info">
-      <div>(912) 674-3761</div>
-
-      <span className="spacer">&#183;</span>
-
-      <div>jlmitchwd@gamil.com</div>
+      <div>jmitchell.dev@gamil.com</div>
 
       <span className="spacer">&#183;</span>
 

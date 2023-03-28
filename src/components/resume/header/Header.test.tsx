@@ -13,8 +13,7 @@ describe('Header', () => {
   test('should render contact info section', () => {
     render(<Header />);
 
-    expect(screen.getByText('(912) 674-3761')).toBeInTheDocument();
-    expect(screen.getByText('jlmitchwd@gamil.com')).toBeInTheDocument();
+    expect(screen.getByText('jmitchell.dev@gamil.com')).toBeInTheDocument();
     expect(screen.getByText('www.linkedin.com/in/joshualeemitchell')).toHaveAttribute('href', 'https://www.linkedin.com/in/joshualeemitchell');
   });
 
