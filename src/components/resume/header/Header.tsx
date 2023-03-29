@@ -57,7 +57,7 @@ const Header = () => (
     </div>
 
     <div className="contact-info">
-      <div>jmitchell.dev@gamil.com</div>
+      <div>jmitchell.dev@gmail.com</div>
 
       <span className="spacer">&#183;</span>
 

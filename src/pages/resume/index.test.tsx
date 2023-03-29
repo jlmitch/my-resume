@@ -21,7 +21,7 @@ describe('ResumePage', () => {
   test('should display ResumePage content', () => {
     render(<ResumePage />);
 
-    expect(screen.getByText('This will be my downloadable Resume')).toBeInTheDocument();
+    expect(screen.getByText('Download')).toHaveAttribute('href', 'https://drive.google.com/file/d/15PC064C00_JqK1lNkCwEqs_WHxiv7i_a/view?usp=share_link');
   });
 
   test('should display Head content', () => {
