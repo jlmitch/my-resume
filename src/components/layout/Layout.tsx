@@ -4,9 +4,10 @@ import styled from 'styled-components';
 import { useSiteMetadata } from '../../hooks/siteMetadata/useSiteMetadata';
 
 const Container =  styled.div`
-  margin: auto;
-  max-width: 500px;
   font-family: sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 `;
 
 const Header = styled.header`
