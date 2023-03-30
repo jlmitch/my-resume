@@ -4,7 +4,12 @@ import styled from 'styled-components';
 const SectionContainer = styled.div`
   color: #595959;
   margin-bottom: 20px;
-  padding-left: 42px;
+  padding-left: 20px;
+
+  /* Small devices such as large phones (640px and up) */
+  @media only screen and (min-width: 40em) {
+    padding-left: 42px;
+  }
 `;
 
 const TimeRange = styled.div`

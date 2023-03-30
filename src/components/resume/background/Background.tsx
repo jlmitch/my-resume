@@ -4,6 +4,12 @@ import styled from 'styled-components';
 const Container = styled.div`
   font-family: 'Open Sans', 'sans-serif';
   margin-bottom: 35px;
+  padding: 0 15px;
+
+  /* Small devices such as large phones (640px and up) */
+  @media only screen and (min-width: 40em) {
+    padding: 0;
+  }
 `;
 
 const SectionHeader = styled.h2`

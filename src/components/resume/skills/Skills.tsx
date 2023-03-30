@@ -8,8 +8,15 @@ const SkillsContainer = styled.div`
 
 const SectionTitle = styled.h2`
   font-family: 'Open Sans', 'sans-serif';
-  margin-bottom: 38px;
+  margin-bottom: 18px;
+  padding: 0 20px;
   text-transform: uppercase;
+
+  /* Small devices such as large phones (640px and up) */
+  @media only screen and (min-width: 40em) {
+    padding: 0;
+    margin-bottom: 38px;
+  }
 `;
 
 const Category = styled.div`
@@ -23,7 +30,7 @@ const Category = styled.div`
 
 const SkillListWrapper = styled.div`
   display: flex;
-  align-items: center;
+  flex-direction: column;
   font-family: 'Times New Roman', Times, serif;
   margin-bottom: 18px;
   padding: 0 27px;
@@ -33,11 +40,21 @@ const SkillListWrapper = styled.div`
     line-height: 22px;
 
     &.tech-skills {
-      padding: 0 66px;
+      padding: 0 15px;
     }
 
     &.interpersonal-skills {
       padding: 0 15px;
+    }
+  }
+
+  /* Small devices such as large phones (640px and up) */
+  @media only screen and (min-width: 40em) {
+    flex-direction: row;
+    align-items: center;
+
+    & .skills.tech-skills {
+        padding: 0 66px;
     }
   }
 `;

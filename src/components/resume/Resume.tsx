@@ -7,11 +7,8 @@ import Work from './background/work/Work';
 import Education from './background/education/Education';
 
 const ResumeContainer = styled.div`
-  border: 1px solid gray;
-  height: 1075px;
-  overflow: auto;
-  padding: 32px;
-  width: 798px;
+  width: 100%;
+  max-width: 798px;
 `;
 
 const Resume = () => (
