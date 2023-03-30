@@ -32,7 +32,7 @@ const ResumePage: FC = () => (
       <div />
       
       <Download
-        href="https://drive.google.com/file/d/15PC064C00_JqK1lNkCwEqs_WHxiv7i_a/view?usp=share_link"
+        href="https://drive.google.com/file/d/1ZMutrGhwFRYkFmmEGABwFWemIhl4WDrS/view?usp=share_link"
         target="_blank"
         rel="noopener noreferrer"
       >

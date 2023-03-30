@@ -8,13 +8,7 @@ const Work = () => (
       location="remote"
       timeRange="2022 - present"
       title="senior software engineer"
-    >
-      <DescriptionList>
-        <li>
-          Worked on an agile scrum team.
-        </li>
-      </DescriptionList>
-    </BackgroundSection>
+    />
 
     <BackgroundSection
       experience="validity, inc"
