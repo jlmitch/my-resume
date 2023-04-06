@@ -8,7 +8,8 @@ jest.mock('../../hooks/siteMetadata/useSiteMetadata');
 describe('Seo', () => {
   beforeEach(() => {
     (useSiteMetadata as jest.Mock).mockReturnValue({
-      siteTitle: 'Michael Scott'
+      siteTitle: 'Michael Scott',
+      siteUrl: 'https://michaelscott.com'
     });
   });
 

@@ -24,8 +24,8 @@ type DataProps = {
   }
 }
 
-const Blog = ({ data: { allMdx } }: PageProps<DataProps>) => (
-  <Layout pageTitle="My Blog Posts">
+const Blog = ({ data: { allMdx }, location }: PageProps<DataProps>) => (
+  <Layout pageTitle="My Blog Posts" location={location}>
     {
       allMdx.nodes.map(({ id, excerpt, frontmatter: { date, title, slug } }) => (
         <article key={id}>

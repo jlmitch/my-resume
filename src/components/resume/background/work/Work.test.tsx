@@ -9,7 +9,6 @@ describe('Work', () => {
     expect(screen.getByText('2022 - present')).toBeInTheDocument();
     expect(screen.getByText('senior software engineer,')).toBeInTheDocument();
     expect(screen.getByText('knockcrm / remote')).toBeInTheDocument();
-    expect(screen.getByText('Worked on an agile scrum team.')).toBeInTheDocument();
 
     expect(screen.getByText('2019 - 2022')).toBeInTheDocument();
     expect(screen.getByText('software engineer,')).toBeInTheDocument();

@@ -29,5 +29,7 @@ module.exports = {
         "data-test-slice-alias": alias
       })
   ),
+  StaticQuery: jest.fn(),
+  graphql: jest.fn(),
   useStaticQuery: jest.fn(),
 };
