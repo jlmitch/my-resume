@@ -8,7 +8,7 @@ const BurgerMenu = () => (
     <Link className={`nav-link ${location.pathname === '/' ? 'active' : '' }`} to="/">Home</Link>
     <Link className={`nav-link ${location.pathname === '/about/' ? 'active' : '' }`} to="/about">About</Link>
     <Link className={`nav-link ${location.pathname === '/resume/' ? 'active' : '' }`} to="/resume">Resume</Link>
-    {/* <Link className={`nav-link ${location.pathname === '/blog/' ? 'active' : '' }`} to="/blog">Blog</Link> */}
+    <Link className={`nav-link ${location.pathname === '/blog/' ? 'active' : '' }`} to="/blog">Blog</Link>
   </Menu>
 );
 

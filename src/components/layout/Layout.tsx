@@ -91,7 +91,7 @@ const ButtonWrapper = styled.div`
 
 interface LayoutProps {
   pageTitle?: string;
-  children: React.ReactNode;
+  children?: React.ReactNode;
   actionButtons?: React.ReactNode[];
   location?: any;
 };

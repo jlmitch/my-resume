@@ -51,9 +51,9 @@ const NavLinks = ({ pathname }: NavLinksProps) => {
           <Link className={`nav-link ${pathname === '/resume/' ? 'active' : '' }`} to="/resume">Resume</Link>
         </li>
 
-        {/* <li className="nav-link-item">
+        <li className="nav-link-item">
           <Link className={`nav-link ${pathname === '/blog/' ? 'active' : '' }`} to="/blog">Blog</Link>
-        </li> */}
+        </li>
       </Links>
     </nav>
   )
