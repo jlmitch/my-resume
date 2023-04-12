@@ -1,9 +1,8 @@
 import React, { FC } from 'react';
 import styled, { createGlobalStyle } from 'styled-components';
 import { useSiteMetadata } from '../../hooks/siteMetadata/useSiteMetadata';
-import { useViewport } from '../../hooks/useViewport/useViewport';
 import NavLinks from './NavLinks';
-import BurgerMenu from '../burger/BurgerMenu';
+import BurgerMenu from '../burgerMenu/BurgerMenu';
 
 const GlobalStyle = createGlobalStyle`
   html {
@@ -98,7 +97,6 @@ interface LayoutProps {
 
 const Layout: FC<LayoutProps> = ({ pageTitle, location, actionButtons, children }) => {
   const { siteTitle } = useSiteMetadata();
-  const { screenWidth } = useViewport();
 
   return (
     <Container>
@@ -111,10 +109,9 @@ const Layout: FC<LayoutProps> = ({ pageTitle, location, actionButtons, children 
             <span className="logo-span">{' />'}</span>
           </Logo>
 
-          { screenWidth < 768
-            ? <BurgerMenu />
-            : <NavLinks pathname={location.pathname}/>
-          }
+          <NavLinks pathname={location.pathname} />
+          
+          <BurgerMenu pathname={location.pathname} />
         </div>
       </div>
 

@@ -3,9 +3,14 @@ import { Link } from 'gatsby';
 import styled from 'styled-components';
 
 const Links = styled.ul`
-  display: flex;
+  display: none;
   list-style: none;
   padding-left: 0;
+
+  /* Small devices such as large phones (640px and up) */
+  @media only screen and (min-width: 40em) {
+    display: flex;
+  }
 
   & .nav-link-item {
     height: 30px;
