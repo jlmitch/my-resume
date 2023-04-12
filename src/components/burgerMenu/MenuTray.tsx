@@ -49,9 +49,6 @@ const MenuTray = ({ open, pathname }: MenuTrayProps) => {
       <li className="nav-link-item">
         <Link className={`nav-link ${pathname === '/resume/' ? 'active' : '' }`} to="/resume"><span>Resume</span></Link>
       </li>
-      <li className="nav-link-item">
-        <Link className={`nav-link ${pathname === '/blog/' ? 'active' : '' }`} to="/blog"><span>Blog</span></Link>
-      </li>
     </Ul>
   )
 }

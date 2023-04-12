@@ -119,7 +119,6 @@ const Layout: FC<LayoutProps> = ({ pageTitle, location, actionButtons, children 
         <GlobalStyle />
 
         <HeadingWrapper>
-
           <Heading>{pageTitle}</Heading>
 
           {actionButtons?.length && actionButtons.map((button: React.ReactNode, index) => <ButtonWrapper key={index}>{button}</ButtonWrapper>) }

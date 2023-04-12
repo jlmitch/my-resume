@@ -20,9 +20,9 @@ describe('AboutPage', () => {
   });
 
   test('should display AboutPage content', () => {
-    const { asFragment } = render(<AboutPage />);
+    const { baseElement } = render(<AboutPage />);
 
-    expect(asFragment()).toMatchSnapshot();
+    expect(baseElement).toMatchSnapshot();
     expect(screen.getByAltText('Me on my boat')).toBeInTheDocument();
   });
 

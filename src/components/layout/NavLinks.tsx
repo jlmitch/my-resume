@@ -41,6 +41,7 @@ interface NavLinksProps {
 }
 
 const NavLinks = ({ pathname }: NavLinksProps) => {
+
   return (
     <nav>
       <Links>
@@ -54,10 +55,6 @@ const NavLinks = ({ pathname }: NavLinksProps) => {
 
         <li className="nav-link-item">
           <Link className={`nav-link ${pathname === '/resume/' ? 'active' : '' }`} to="/resume">Resume</Link>
-        </li>
-
-        <li className="nav-link-item">
-          <Link className={`nav-link ${pathname === '/blog/' ? 'active' : '' }`} to="/blog">Blog</Link>
         </li>
       </Links>
     </nav>
