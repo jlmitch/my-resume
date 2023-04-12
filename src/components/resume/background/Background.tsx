@@ -10,6 +10,11 @@ const Container = styled.div`
   @media only screen and (min-width: 40em) {
     padding: 0;
   }
+
+  /* Medium devices such as tablets (768px and up) */
+  @media only screen and (min-width: 48em) {
+    padding: 0 20px;
+  }
 `;
 
 const SectionHeader = styled.h2`

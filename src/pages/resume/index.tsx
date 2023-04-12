@@ -1,36 +1,32 @@
-import React, { FC } from 'react';
+import React from 'react';
 import styled from 'styled-components';
 import Layout from '../../components/layout/Layout';
 import Seo from '../../components/seo/Seo';
 import Resume from '../../components/resume/Resume';
-
-const Wrapper = styled.div`
-  display: flex;
-  justify-content: space-between;
-`;
+import type { PageProps } from 'gatsby';
 
 const Download = styled.a`
+  font-family: 'Open Sans', 'sans-serif';
+  font-size: 16px;
   display: inline-block;
-  background-color: rebeccapurple;
+  background-color: #BFA181;
   text-decoration: none;
-  border: 1px solid rebeccapurple;
-  color: #fff;
+  border: 2px solid #BFA181;
+  color: #0A1828;
   border-radius: 5px;
   margin-bottom: 10px;
   padding: 15px;
 
   &:hover {
-    background-color: #fff;
-    color: rebeccapurple;
-
+    background-color: #0A1828;
+    color: #BFA181;
   }
 `;
 
-const ResumePage: FC = () => (
-  <Layout pageTitle="Resume">
-    <Wrapper>
-      <div />
-      
+const ResumePage = ({ location }: PageProps) => (
+  <Layout
+    location={location}
+    actionButtons={[
       <Download
         href="https://drive.google.com/file/d/1ZMutrGhwFRYkFmmEGABwFWemIhl4WDrS/view?usp=share_link"
         target="_blank"
@@ -38,8 +34,8 @@ const ResumePage: FC = () => (
       >
         Download
       </Download>
-    </Wrapper>
-
+    ]}
+  >
     <Resume />
   </Layout>
 );

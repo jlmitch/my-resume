@@ -40,24 +40,11 @@ const ExperienceInfo = styled.div`
 `;
 
 
-export const DescriptionList = styled.div`
+export const DescriptionList = styled.ul`
   font-size: 16px;
   line-height: 25px;
   list-style-position: outside;
-  list-style-type: none;
-  padding-left: 32px;
-
-  & li { 
-    padding-left: 22px;
-    position: relative;
-
-    &:before {
-      content: "•";
-      font-size: 27px;
-      position: absolute;
-      left: -5px;
-    }
-  }
+  padding-left: 52px;
 `;
 
 interface ExperienceSectionProps {

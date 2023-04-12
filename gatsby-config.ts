@@ -2,8 +2,8 @@ import type { GatsbyConfig } from "gatsby";
 
 const config: GatsbyConfig = {
   siteMetadata: {
-    title: `Joshua Mitchell`,
-    siteUrl: `https://www.yourdomain.tld`
+    title: `JM`,
+    siteUrl: `https://joshmitchell.dev`
   },
   // More easily incorporate content into your pages through automatic TypeScript type generation and better GraphQL IntelliSense.
   // If you use VSCode you can also use the GraphQL plugin
@@ -14,13 +14,13 @@ const config: GatsbyConfig = {
     "gatsby-plugin-image",
     "gatsby-plugin-sharp",
     "gatsby-plugin-mdx",
-    {
-      resolve: "gatsby-source-filesystem",
-      options: {
-        name: `blog`,
-        path: `${__dirname}/blog`,
-      }
-    },
+    // {
+    //   resolve: "gatsby-source-filesystem",
+    //   options: {
+    //     name: `blog`,
+    //     path: `${__dirname}/blog`,
+    //   }
+    // },
     {
       resolve: `gatsby-omni-font-loader`,
       options: {
@@ -30,6 +30,10 @@ const config: GatsbyConfig = {
           {
             name: `Open Sans`,
             file: `https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap`,
+          },
+          {
+            name: `Schibsted Grotesk`,
+            file: `https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@400&display=swap`,
           },
         ],
       },

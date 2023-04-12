@@ -13,6 +13,7 @@ const HeaderContainer = styled.div`
     align-items: center;
     font-family: 'Georgia';
     font-size: 35px;
+    margin-top: 40px;
     text-transform: uppercase;
 
     & .last-name {

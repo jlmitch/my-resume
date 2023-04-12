@@ -17,6 +17,11 @@ const SectionTitle = styled.h2`
     padding: 0;
     margin-bottom: 38px;
   }
+
+  /* Medium devices such as tablets (768px and up) */
+  @media only screen and (min-width: 48em) {
+    padding: 0 20px;
+  }
 `;
 
 const Category = styled.div`
@@ -56,6 +61,11 @@ const SkillListWrapper = styled.div`
     & .skills.tech-skills {
         padding: 0 66px;
     }
+  }
+
+  /* Medium devices such as tablets (768px and up) */
+  @media only screen and (min-width: 48em) {
+    padding: 0 38px;
   }
 `;
 

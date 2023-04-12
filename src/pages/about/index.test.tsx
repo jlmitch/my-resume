@@ -10,7 +10,8 @@ jest.mock('../../components/layout/Layout', () => ({children}: any) => <>{childr
 describe('AboutPage', () => {
   beforeEach(() => {
     (useSiteMetadata as jest.Mock).mockReturnValue({
-      siteTitle: 'Michael Scott'
+      siteTitle: 'Michael Scott',
+      siteUrl: 'https://michaelscott.com'
     });
   });
 
@@ -19,9 +20,10 @@ describe('AboutPage', () => {
   });
 
   test('should display AboutPage content', () => {
-    render(<AboutPage />);
+    const { baseElement } = render(<AboutPage />);
 
-    expect(screen.getByText('Hi there! I\'m the proud creator of this site, which I built with Gatsby.')).toBeInTheDocument();
+    expect(baseElement).toMatchSnapshot();
+    expect(screen.getByAltText('Me on my boat')).toBeInTheDocument();
   });
 
   test('should display Head content', () => {

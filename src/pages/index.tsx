@@ -1,13 +1,14 @@
-import React, { FC } from 'react';
-import { StaticImage } from 'gatsby-plugin-image';
+import React from 'react';
+import type { PageProps } from "gatsby";
+import styled from 'styled-components';
 import Layout from '../components/layout/Layout';
 import Seo from '../components/seo/Seo';
 
-const HomePage: FC = () => {
+
+const HomePage = ({ location }: PageProps) => {
   return (
-    <Layout pageTitle="Home Page">
-      <p>I'm making this by following the Gatsby Tutorial.</p>
-      <StaticImage src="../images/boat-me.jpg" alt="Me on my boat" />
+    <Layout location={location}>
+
     </Layout>
   )
 };

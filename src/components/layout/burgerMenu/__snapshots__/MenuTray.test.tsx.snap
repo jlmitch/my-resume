@@ -1,0 +1,49 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`MenuTray should display MenuTray content 1`] = `
+<body>
+  <div>
+    <ul
+      class="sc-beqWaB iqOwOs"
+      open=""
+    >
+      <li
+        class="nav-link-item"
+      >
+        <a
+          class="nav-link "
+          href="/"
+        >
+          <span>
+            Home
+          </span>
+        </a>
+      </li>
+      <li
+        class="nav-link-item"
+      >
+        <a
+          class="nav-link "
+          href="/about"
+        >
+          <span>
+            About
+          </span>
+        </a>
+      </li>
+      <li
+        class="nav-link-item"
+      >
+        <a
+          class="nav-link "
+          href="/resume"
+        >
+          <span>
+            Resume
+          </span>
+        </a>
+      </li>
+    </ul>
+  </div>
+</body>
+`;
