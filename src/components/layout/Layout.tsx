@@ -2,7 +2,7 @@ import React, { FC } from 'react';
 import styled, { createGlobalStyle } from 'styled-components';
 import { useSiteMetadata } from '../../hooks/siteMetadata/useSiteMetadata';
 import NavLinks from './NavLinks';
-import BurgerMenu from '../burgerMenu/BurgerMenu';
+import BurgerMenu from './burgerMenu/BurgerMenu';
 
 const GlobalStyle = createGlobalStyle`
   html {

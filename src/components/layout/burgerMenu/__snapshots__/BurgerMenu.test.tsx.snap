@@ -1,0 +1,37 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`BurgerMenu should display BurgerMenu content 1`] = `
+<body>
+  <div>
+    <div
+      class="sc-beqWaB fmVqgy"
+      data-testid="burger-menu"
+    >
+      <div />
+      <div />
+      <div />
+    </div>
+    <div>
+      Menu Tray
+    </div>
+  </div>
+</body>
+`;
+
+exports[`BurgerMenu should match snapshot on click 1`] = `
+<body>
+  <div>
+    <div
+      class="sc-beqWaB fmVqgy"
+      data-testid="burger-menu"
+    >
+      <div />
+      <div />
+      <div />
+    </div>
+    <div>
+      Menu Tray
+    </div>
+  </div>
+</body>
+`;

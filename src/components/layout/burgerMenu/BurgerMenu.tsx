@@ -51,9 +51,12 @@ interface BurgerMenuProps {
 
 const BurgerMenu = ({ pathname }: BurgerMenuProps) => {
   const [open, setOpen] = useState(false);
+
+  const handleOnclick = () => setOpen(!open);
+
   return (
     <>
-      <StyledBurger open={open} onClick={() => setOpen(!open)}>
+      <StyledBurger data-testid="burger-menu" open={open} onClick={handleOnclick}>
         <div />
         <div />
         <div />

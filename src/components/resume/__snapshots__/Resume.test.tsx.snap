@@ -1,0 +1,351 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Resume should my resume 1`] = `
+<body>
+  <div>
+    <div
+      class="sc-csCMJt dUwfmU"
+    >
+      <div
+        class="sc-eDDNvR heJzWk"
+      >
+        <div
+          class="header"
+        >
+          Joshua 
+          <span
+            class="last-name"
+          >
+            Mitchell
+          </span>
+        </div>
+        <div
+          class="contact-info"
+        >
+          <div>
+            jmitchell.dev@gmail.com
+          </div>
+          <span
+            class="spacer"
+          >
+            ·
+          </span>
+          <a
+            class="linked-in-link"
+            href="https://www.linkedin.com/in/joshualeemitchell"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            www.linkedin.com/in/joshualeemitchell
+          </a>
+        </div>
+        <div
+          class="description"
+        >
+          Seeking a challenging frontend software engineer role in an organization where I can make a significant contribution using my talents and skills.
+        </div>
+      </div>
+      <div
+        class="sc-beqWaB emoJJV"
+      >
+        <h2
+          class="sc-gueYoa hoOLVN"
+        >
+          skills
+        </h2>
+        <div
+          class="sc-hLseeU fWxWGR"
+        >
+          <div
+            class="sc-dmqHEX jJiVjw"
+          >
+            technical:
+          </div>
+          <div
+            class="skills tech-skills"
+          >
+            JavaScript / Webpack / React / Redux / Sass / Jest / Enzyme / React Testing Library / Git / HTML / CSS
+          </div>
+        </div>
+        <div
+          class="sc-hLseeU fWxWGR"
+        >
+          <div
+            class="sc-dmqHEX jJiVjw"
+          >
+            interpersonal:
+          </div>
+          <div
+            class="skills interpersonal-skills"
+          >
+            Excellent Communicator / Team Player / Dependable / Empathetic / Positive Attitude / Active Listener / Problem Solver / Resilient
+          </div>
+        </div>
+      </div>
+      <div
+        class="sc-jTrPJq ihqLfK"
+      >
+        <h2
+          class="sc-gLDzan dAcxzH"
+        >
+          experience
+        </h2>
+        <div
+          class="sc-iAEyYk gLqNZN"
+        >
+          <div
+            class="sc-fsQiph BKCVx"
+          >
+            <div
+              class="sc-kFuwaP hPxnzJ"
+            >
+              <div
+                class="sc-qRumB hNEMxb"
+              >
+                2022 - present
+              </div>
+              <div
+                class="sc-jsMahE rBjeJ"
+              >
+                <span
+                  class="title"
+                >
+                  senior software engineer
+                  ,
+                </span>
+                 
+                knockcrm
+                 / 
+                remote
+              </div>
+            </div>
+            <div />
+          </div>
+          <div
+            class="sc-fsQiph BKCVx"
+          >
+            <div
+              class="sc-kFuwaP hPxnzJ"
+            >
+              <div
+                class="sc-qRumB hNEMxb"
+              >
+                2019 - 2022
+              </div>
+              <div
+                class="sc-jsMahE rBjeJ"
+              >
+                <span
+                  class="title"
+                >
+                  software engineer
+                  ,
+                </span>
+                 
+                validity, inc
+                 / 
+                boston ma
+              </div>
+            </div>
+            <div>
+              <ul
+                class="sc-irTswW fCIbaN"
+              >
+                <li>
+                  Worked on an agile scrum team to revamp an outdated product, DemandTools, by building and releasing an Electron application using Webpack, React, and Redux.
+                </li>
+                <li>
+                  Achieved nearly 100% frontend test coverage by writing test proven and maintainable code for all pull requests using Jest, Enzyme, Cypress, and React Testing Library.
+                </li>
+                <li>
+                  Took lead on refreshing Validity's Webstore with React and Sass, contributing regularly to Validity's reusable React component library by building needed components for new features.
+                </li>
+                <li>
+                  Provided peer to peer code reviews using GitHub and contributed to multiple projects within Validity's monorepo.
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div
+            class="sc-fsQiph BKCVx"
+          >
+            <div
+              class="sc-kFuwaP hPxnzJ"
+            >
+              <div
+                class="sc-qRumB hNEMxb"
+              >
+                2016 - 2019
+              </div>
+              <div
+                class="sc-jsMahE rBjeJ"
+              >
+                <span
+                  class="title"
+                >
+                  ui engineer
+                  ,
+                </span>
+                 
+                vestmark
+                 / 
+                boston ma
+              </div>
+            </div>
+            <div>
+              <ul
+                class="sc-irTswW fCIbaN"
+              >
+                <li>
+                  Worked on an agile scrum team of developers to build and implement new frontend features for a financial wealth management software, VesmarkONE.
+                </li>
+                <li>
+                  Implemented new features and resolved user-facing bugs using Vanilla JavaScript, HTML, and CSS.
+                </li>
+                <li>
+                  Helped to bring in Webpack, allowing the use of ES6 standard JavaScript while also implementing React.js and Sass on multiple Vestmark platforms.
+                </li>
+                <li>
+                  Provided peer-to-peer code reviews using Bitbucket and contributed to multiple projects within the company.
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div
+            class="sc-fsQiph BKCVx"
+          >
+            <div
+              class="sc-kFuwaP hPxnzJ"
+            >
+              <div
+                class="sc-qRumB hNEMxb"
+              >
+                2008 - 2011
+              </div>
+              <div
+                class="sc-jsMahE rBjeJ"
+              >
+                <span
+                  class="title"
+                >
+                  fireman
+                  ,
+                </span>
+                 
+                united states coast guard
+                 / 
+                boston ma
+              </div>
+            </div>
+            <div>
+              <ul
+                class="sc-irTswW fCIbaN"
+              >
+                <li>
+                  Learned to incorporated Honor, Respect, and Devotion to Duty into the daily fabric of my life.
+                </li>
+                <li>
+                  Developed strong teamwork abilities by working alongside others to achieve common goals.
+                </li>
+                <li>
+                  Learned how to work within a team of individuals, communicate effectively, and give maximum effort to everything pursued through service in the Coast Guard.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="sc-jTrPJq ihqLfK"
+      >
+        <h2
+          class="sc-gLDzan dAcxzH"
+        >
+          education
+        </h2>
+        <div
+          class="sc-iAEyYk gLqNZN"
+        >
+          <div
+            class="sc-fsQiph BKCVx"
+          >
+            <div
+              class="sc-kFuwaP hPxnzJ"
+            >
+              <div
+                class="sc-qRumB hNEMxb"
+              >
+                september 2016
+              </div>
+              <div
+                class="sc-jsMahE rBjeJ"
+              >
+                <span
+                  class="title"
+                >
+                  web development immersive
+                  ,
+                </span>
+                 
+                general assembly
+                 / 
+                boston ma
+              </div>
+            </div>
+            <div>
+              <ul
+                class="sc-irTswW fCIbaN"
+              >
+                <li>
+                  Duration: 12 weeks / 480 hours
+                </li>
+                <li>
+                  Specialized in: JavaScript, Ruby, HTML, CSS, Ember.js, PostgreSQL, MongoDB, Ruby on Rails.
+                </li>
+                <li>
+                  Created one frontend project and two full-stack projects using the skills learned during the program.
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div
+            class="sc-fsQiph BKCVx"
+          >
+            <div
+              class="sc-kFuwaP hPxnzJ"
+            >
+              <div
+                class="sc-qRumB hNEMxb"
+              >
+                may 2016
+              </div>
+              <div
+                class="sc-jsMahE rBjeJ"
+              >
+                <span
+                  class="title"
+                >
+                  bachelors in holistic psychology
+                  ,
+                </span>
+                 
+                lesley university
+                , 
+                <span
+                  class="gpa"
+                >
+                  gpa 3.3/4.0
+                </span>
+              </div>
+            </div>
+            <div />
+          </div>
+        </div>
+      </div>
+      <div
+        class="filler"
+      />
+    </div>
+  </div>
+</body>
+`;

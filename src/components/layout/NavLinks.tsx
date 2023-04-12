@@ -41,7 +41,6 @@ interface NavLinksProps {
 }
 
 const NavLinks = ({ pathname }: NavLinksProps) => {
-
   return (
     <nav>
       <Links>
