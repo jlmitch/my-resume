@@ -6,10 +6,13 @@ import BurgerMenu from './burgerMenu/BurgerMenu';
 
 const GlobalStyle = createGlobalStyle`
   html {
-    background-color: #0A1828;
+    background: linear-gradient(180deg, rgba(10,24,40,1) 40%, rgba(23,133,130,1) 100%);
     font-size: 16px;
+    height: 100vh;
+
     body {
       margin: 0;
+
     }
   }
 `;
@@ -46,8 +49,8 @@ const HeadingWrapper = styled.div`
 `;
 
 const Heading = styled.div`
-  font-size: 50px;
-  margin: 75px 0 55px 20px;
+  font-size: 44px;
+  margin: 40px 0 22px 80px;
   color: #BFA181;
   font-family: 'Schibsted Grotesk', 'sans-serif';
 `;
@@ -83,9 +86,9 @@ const Logo = styled.div`
 `;
 
 const ButtonWrapper = styled.div`
-    margin-bottom: 20px;
-    display: flex;
-    justify-content: space-around;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-around;
 `;
 
 interface LayoutProps {
@@ -101,7 +104,6 @@ const Layout: FC<LayoutProps> = ({ pageTitle, location, actionButtons, children 
   return (
     <Container>
       <div className="navbar">
-
         <div className="nav">
           <Logo>
             <span className="logo-span">{'<'}</span>
@@ -119,7 +121,7 @@ const Layout: FC<LayoutProps> = ({ pageTitle, location, actionButtons, children 
         <GlobalStyle />
 
         <HeadingWrapper>
-          <Heading>{pageTitle}</Heading>
+          {pageTitle && pageTitle.length > 0 && <Heading>{pageTitle}</Heading>}
 
           {actionButtons?.length && actionButtons.map((button: React.ReactNode, index) => <ButtonWrapper key={index}>{button}</ButtonWrapper>) }
         </HeadingWrapper>
