@@ -6,13 +6,13 @@ import BurgerMenu from './burgerMenu/BurgerMenu';
 
 const GlobalStyle = createGlobalStyle`
   html {
-    background: linear-gradient(180deg, rgba(10,24,40,1) 40%, rgba(23,133,130,1) 100%);
     font-size: 16px;
-    height: 100vh;
 
     body {
       margin: 0;
-
+      min-height: 100vh;
+      background: linear-gradient(180deg, rgba(10,24,40,1) 40%, rgba(23,133,130,1) 100%);
+      background-repeat: no-repeat;
     }
   }
 `;
